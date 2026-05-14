@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Haven | Discover & Watch Anime</title>
+    <meta name="description" content="The ultimate destination for anime fans. Discover, search, and watch your favorite series including Attack on Titan.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Plyr & Hls.js -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i data-lucide="play-circle" class="logo-icon"></i>
+                    <span>ANIME<span>HAVEN</span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#trending" class="nav-link">Trending</a>
+                    <a href="#popular" class="nav-link">Popular</a>
+                </div>
+                <div class="search-box">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search anime...">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="mainContent">
+            <!-- Hero Section -->
+            <section id="hero" class="hero"></section>
+
+            <!-- Discovery Sections -->
+            <div id="discovery">
+                <section class="rail-section">
+                    <div class="section-header">
+                        <h2>Trending Now</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div id="trendingRail" class="anime-rail">
+                        <div class="skeleton-loader"></div>
+                    </div>
+                </section>
+
+                <section class="rail-section">
+                    <div class="section-header">
+                        <h2>All Time Popular</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div id="popularRail" class="anime-rail">
+                        <div class="skeleton-loader"></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Search Results View (Hidden by default) -->
+        <div id="searchView" class="search-view hidden">
+            <div class="section-header">
+                <h2 id="searchTitle">Search Results</h2>
+                <button id="closeSearch" class="close-btn"><i data-lucide="x"></i></button>
+            </div>
+            <div id="searchResultsGrid" class="anime-grid"></div>
+        </div>
+
+        <!-- Anime Detail Modal -->
+        <div id="detailModal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close"><i data-lucide="x"></i></button>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+
+        <!-- Inside Player View -->
+        <div id="playerView" class="player-view hidden">
+            <div class="player-overlay"></div>
+            <div class="player-container">
+                <div class="player-header">
+                    <div class="player-title-info">
+                        <h2 id="playerAnimeTitle">Anime Title</h2>
+                        <div class="player-sub-header">
+                            <span id="playerEpisodeNum">Episode 1</span>
+                            <span id="playerProvider" class="provider-badge">GogoAnime</span>
+                        </div>
+                    </div>
+                    <button id="closePlayer" class="close-btn"><i data-lucide="x"></i></button>
+                </div>
+                
+                <div class="video-wrapper">
+                    <div id="playerPlaceholder" class="player-placeholder hidden">
+                        <div class="spinner"></div>
+                        <p>Fetching direct stream...</p>
+                    </div>
+                    <video id="player" playsinline controls crossorigin></video>
+                    <div id="iframeContainer" class="hidden" style="width:100%; height:100%;">
+                        <iframe id="videoIframe" src="" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
+                    </div>
+                </div>
+
+                <div class="player-controls">
+                    <div class="controls-section">
+                        <div class="section-header-row" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3>Select Server</h3>
+                            <span style="font-size: 0.8rem; color: var(--text-dim);">Switch servers if loading fails</span>
+                        </div>
+                        <div id="serverList" class="server-list"></div>
+                    </div>
+                    
+                    <div class="controls-section">
+                        <h3>Select Episode</h3>
+                        <div id="episodeList" class="episode-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="logo">
+                    <i data-lucide="play-circle" class="logo-icon"></i>
+                    <span>ANIME<span>HAVEN</span></span>
+                </div>
+                <p>&copy; 2026 Anime Haven. Powered by AniList API.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
