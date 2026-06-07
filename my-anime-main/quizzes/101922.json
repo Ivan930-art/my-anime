@@ -1,0 +1,60 @@
+{
+  "title": "Demon Slayer Trivia",
+  "questions": [
+    {
+      "question": "Which Breathing Style does Tanjiro Kamado learn first?",
+      "options": [
+        "Flame Breathing",
+        "Water Breathing",
+        "Sun Breathing",
+        "Thunder Breathing"
+      ],
+      "answer": 1,
+      "explanation": "Tanjiro is trained by Sakonji Urokodaki and learns Water Breathing before discovering Hinokami Kagura."
+    },
+    {
+      "question": "What is the name of Tanjiro's younger sister who was turned into a demon?",
+      "options": [
+        "Kanao",
+        "Mitsuri",
+        "Nezuko",
+        "Aoi"
+      ],
+      "answer": 2,
+      "explanation": "Nezuko Kamado is Tanjiro's sister who survives the demon attack but is turned into a demon herself."
+    },
+    {
+      "question": "Who is the Flame Hashira that plays a major role in the Mugen Train Arc?",
+      "options": [
+        "Giyu Tomioka",
+        "Kyojuro Rengoku",
+        "Tengen Uzui",
+        "Sanemi Shinazugawa"
+      ],
+      "answer": 1,
+      "explanation": "Kyojuro Rengoku is the passionate Flame Hashira who bravely defends the passengers on the Mugen Train."
+    },
+    {
+      "question": "Who is the original demon and leader of the Twelve Kizuki?",
+      "options": [
+        "Muzan Kibutsuji",
+        "Akaza",
+        "Kokushibo",
+        "Doma"
+      ],
+      "answer": 0,
+      "explanation": "Muzan Kibutsuji is the first and most powerful demon, responsible for creating all other demons."
+    },
+    {
+      "question": "What kind of earrings does Tanjiro wear, which were passed down from his father?",
+      "options": [
+        "Magatama earrings",
+        "Hanafuda earrings",
+        "Tomoe earrings",
+        "Gold loop earrings"
+      ],
+      "answer": 1,
+      "explanation": "Tanjiro wears Hanafuda earrings, which are legacy items passed down in his family and related to Sun Breathing."
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Haven | Discover & Watch Anime</title>
+    <meta name="description" content="The ultimate destination for anime fans. Discover, search, and watch your favorite series including Attack on Titan.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Plyr & Hls.js -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i data-lucide="play-circle" class="logo-icon"></i>
+                    <span>ANIME<span>HAVEN</span></span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#trending" class="nav-link">Trending</a>
+                    <a href="#popular" class="nav-link">Popular</a>
+                </div>
+                <div class="search-box">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search anime...">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="mainContent">
+            <!-- Hero Section -->
+            <section id="hero" class="hero"></section>
+
+            <!-- Discovery Sections -->
+            <div id="discovery">
+                <section class="rail-section">
+                    <div class="section-header">
+                        <h2>Trending Now</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div id="trendingRail" class="anime-rail">
+                        <div class="skeleton-loader"></div>
+                    </div>
+                </section>
+
+                <section class="rail-section">
+                    <div class="section-header">
+                        <h2>All Time Popular</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div id="popularRail" class="anime-rail">
+                        <div class="skeleton-loader"></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Search Results View (Hidden by default) -->
+        <div id="searchView" class="search-view hidden">
+            <div class="section-header">
+                <h2 id="searchTitle">Search Results</h2>
+                <button id="closeSearch" class="close-btn"><i data-lucide="x"></i></button>
+            </div>
+            <div id="searchResultsGrid" class="anime-grid"></div>
+        </div>
+
+        <!-- Anime Detail Modal -->
+        <div id="detailModal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close"><i data-lucide="x"></i></button>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+
+        <!-- Anime Quiz Modal -->
+        <div id="quizModal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content quiz-modal-content">
+                <button class="modal-close quiz-modal-close"><i data-lucide="x"></i></button>
+                <div class="quiz-container">
+                    <!-- Quiz Header -->
+                    <div class="quiz-header">
+                        <div class="quiz-meta-row">
+                            <div class="quiz-question-number-badge">
+                                <i data-lucide="help-circle" style="width: 14px; height: 14px;"></i>
+                                <span>Question <span id="quizCurrentNum">1</span>/<span id="quizTotalNum">5</span></span>
+                            </div>
+                            <div class="quiz-counters">
+                                <span class="counter-badge counter-correct">
+                                    <i data-lucide="check" style="width: 12px; height: 12px; stroke-width: 3px;"></i>
+                                    <span id="quizCorrectCount">0</span>
+                                </span>
+                                <span class="counter-badge counter-incorrect">
+                                    <i data-lucide="x" style="width: 12px; height: 12px; stroke-width: 3px;"></i>
+                                    <span id="quizIncorrectCount">0</span>
+                                </span>
+                            </div>
+                        </div>
+                        <h2 id="quizTitle" class="quiz-title">Anime Trivia</h2>
+                        <div class="quiz-progress-bar-container">
+                            <div id="quizProgressBar" class="quiz-progress-bar" style="width: 20%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Question View -->
+                    <div id="quizQuestionView" class="quiz-question-view">
+                        <h3 id="quizQuestion" class="quiz-question">Question text goes here?</h3>
+                        <div id="quizOptions" class="quiz-options">
+                            <!-- Options injected dynamically -->
+                        </div>
+                        
+                        <!-- Explanation Box (Initially hidden) -->
+                        <div id="quizExplanationBox" class="quiz-explanation-box hidden">
+                            <div class="explanation-status">
+                                <i id="explanationIcon" data-lucide="check-circle-2"></i>
+                                <span id="explanationStatusText">Correct!</span>
+                            </div>
+                            <p id="quizExplanationText">Explanation text...</p>
+                        </div>
+                    </div>
+
+                    <!-- Quiz Result View (Initially hidden) -->
+                    <div id="quizResultView" class="quiz-result-view hidden">
+                        <div class="result-score-container">
+                            <div class="result-score-circle">
+                                <span id="resultScore">0/0</span>
+                            </div>
+                        </div>
+                        <h3 id="resultTitle">Perfect Score!</h3>
+                        <p id="resultMsg">You're a true fan!</p>
+                        <button id="quizRestartBtn" class="btn btn-primary quiz-restart-btn">
+                            <i data-lucide="refresh-cw"></i> Play Again
+                        </button>
+                    </div>
+
+                    <!-- Quiz Action Footer -->
+                    <div class="quiz-footer">
+                        <button id="quizNextBtn" class="btn btn-primary quiz-next-btn" disabled>
+                            <span>Next Question</span> <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Inside Player View -->
+        <div id="playerView" class="player-view hidden">
+            <div class="player-overlay"></div>
+            <div class="player-container">
+                <div class="player-header">
+                    <div class="player-title-info">
+                        <h2 id="playerAnimeTitle">Anime Title</h2>
+                        <div class="player-sub-header">
+                            <span id="playerEpisodeNum">Episode 1</span>
+                            <span id="playerProvider" class="provider-badge">GogoAnime</span>
+                        </div>
+                    </div>
+                    <button id="closePlayer" class="close-btn"><i data-lucide="x"></i></button>
+                </div>
+                
+                <div class="video-wrapper">
+                    <div id="playerPlaceholder" class="player-placeholder hidden">
+                        <div class="spinner"></div>
+                        <p>Fetching direct stream...</p>
+                    </div>
+                    <video id="player" playsinline controls crossorigin></video>
+                    <div id="iframeContainer" class="hidden" style="width:100%; height:100%;">
+                        <iframe id="videoIframe" src="" frameborder="0" allowfullscreen style="width:100%; height:100%;"></iframe>
+                    </div>
+                </div>
+
+                <div class="player-controls">
+                    <div class="controls-section">
+                        <div class="section-header-row" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                            <h3>Select Server</h3>
+                            <span style="font-size: 0.8rem; color: var(--text-dim);">Switch servers if loading fails</span>
+                        </div>
+                        <div id="serverList" class="server-list"></div>
+                    </div>
+                    
+                    <div class="controls-section">
+                        <h3>Select Episode</h3>
+                        <div id="episodeList" class="episode-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="logo">
+                    <i data-lucide="play-circle" class="logo-icon"></i>
+                    <span>ANIME<span>HAVEN</span></span>
+                </div>
+                <p>&copy; 2026 Anime Haven. Powered by AniList API.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

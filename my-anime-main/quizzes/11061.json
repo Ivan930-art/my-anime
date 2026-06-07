@@ -1,0 +1,60 @@
+{
+  "title": "Hunter x Hunter Trivia",
+  "questions": [
+    {
+      "question": "What is Gon Freecss's primary motivation for becoming a Hunter?",
+      "options": [
+        "To earn a fortune",
+        "To find his father, Ging",
+        "To become the strongest warrior",
+        "To avenge his clan"
+      ],
+      "answer": 1,
+      "explanation": "Gon wants to understand why being a Hunter was more important to his father, Ging, than staying with him."
+    },
+    {
+      "question": "Who is Gon's best friend and a young member of the famous Zoldyck family?",
+      "options": [
+        "Kurapika",
+        "Leorio",
+        "Killua",
+        "Hisoka"
+      ],
+      "answer": 2,
+      "explanation": "Killua Zoldyck is Gon's closest companion, whom he meets during the Hunter Exam."
+    },
+    {
+      "question": "What business is the Zoldyck family famous for?",
+      "options": [
+        "Assassination",
+        "Weapons manufacturing",
+        "Hunter associations",
+        "Gourmet cooking"
+      ],
+      "answer": 0,
+      "explanation": "The Zoldycks are a legendary and wealthy family of elite elite assassins living on Kukuroo Mountain."
+    },
+    {
+      "question": "What is the name of the spiritual energy and power system in Hunter x Hunter?",
+      "options": [
+        "Chakra",
+        "Ki",
+        "Nen",
+        "Reiryoku"
+      ],
+      "answer": 2,
+      "explanation": "Nen is the technique that allows a living being to use and manipulate their own life energy (aura)."
+    },
+    {
+      "question": "Who is the leader of the Phantom Troupe (Genei Ryodan)?",
+      "options": [
+        "Feitan Portor",
+        "Uvogin",
+        "Hisoka Morow",
+        "Chrollo Lucilfer"
+      ],
+      "answer": 3,
+      "explanation": "Chrollo Lucilfer is the founder and leader of the Phantom Troupe, possessing the ability to steal other Nen abilities."
+    }
+  ]
+}

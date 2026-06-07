@@ -1,0 +1,60 @@
+{
+  "title": "Jujutsu Kaisen Trivia",
+  "questions": [
+    {
+      "question": "Who is the main protagonist who becomes the vessel for Sukuna?",
+      "options": [
+        "Megumi Fushiguro",
+        "Yuji Itadori",
+        "Yuta Okkotsu",
+        "Kento Nanami"
+      ],
+      "answer": 1,
+      "explanation": "Yuji Itadori swallows one of Ryomen Sukuna's fingers and becomes his vessel."
+    },
+    {
+      "question": "What is the name of Gojo Satoru's barrier technique that stops attacks from touching him?",
+      "options": [
+        "Domain Expansion",
+        "Limitless Infinity",
+        "Hollow Purple",
+        "Black Flash"
+      ],
+      "answer": 1,
+      "explanation": "Infinity (Mukagen) is the base state of Gojo's Limitless technique, slowing down things as they approach him so they never touch."
+    },
+    {
+      "question": "Who was the Principal of Tokyo Jujutsu High who created Panda?",
+      "options": [
+        "Masamichi Yaga",
+        "Yoshinobu Gakuganji",
+        "Kiyotaka Ijichi",
+        "Shoko Ieiri"
+      ],
+      "answer": 0,
+      "explanation": "Principal Masamichi Yaga created Panda, who is an Abrupt Mutated Cursed Corpse."
+    },
+    {
+      "question": "What grade Jujutsu Sorcerer is Yuta Okkotsu classified as?",
+      "options": [
+        "Grade 1",
+        "Semi-Grade 1",
+        "Special Grade",
+        "Grade 2"
+      ],
+      "answer": 2,
+      "explanation": "Yuta Okkotsu is one of the very few registered Special Grade Jujutsu Sorcerers due to his immense cursed energy."
+    },
+    {
+      "question": "Which Cursed Technique does Megumi Fushiguro inherit from the Zenin Clan?",
+      "options": [
+        "Straw Doll Technique",
+        "Ratio Technique",
+        "Projection Sorcery",
+        "Ten Shadows Technique"
+      ],
+      "answer": 3,
+      "explanation": "Megumi uses the Ten Shadows Technique, allowing him to summon Shikigami using shadows as an intermediary."
+    }
+  ]
+}

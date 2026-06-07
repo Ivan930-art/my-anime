@@ -1,0 +1,60 @@
+{
+  "title": "Death Note Trivia",
+  "questions": [
+    {
+      "question": "What is the name of the Shinigami who intentionally drops his Death Note into the human world?",
+      "options": [
+        "Rem",
+        "Gelus",
+        "Ryuk",
+        "Sidoh"
+      ],
+      "answer": 2,
+      "explanation": "Ryuk drops his Death Note because he is bored and wants to see what a human would do with it."
+    },
+    {
+      "question": "What is the name of the genius detective who attempts to track down Kira?",
+      "options": [
+        "Near",
+        "L",
+        "Mello",
+        "Matsuda"
+      ],
+      "answer": 1,
+      "explanation": "L (L Lawliet) is the world-renowned detective who leads the investigation against Kira."
+    },
+    {
+      "question": "What alias does Light Yagami receive from the public as he performs his executions?",
+      "options": [
+        "Kami",
+        "Zero",
+        "Kira",
+        "Shinigami"
+      ],
+      "answer": 2,
+      "explanation": "The public and media dub the mysterious killer 'Kira' (derived from the English word 'killer')."
+    },
+    {
+      "question": "Which food is Ryuk famously obsessed with?",
+      "options": [
+        "Apples",
+        "Chocolate",
+        "Potato chips",
+        "Ramen"
+      ],
+      "answer": 0,
+      "explanation": "Ryuk loves juicy human apples and goes into withdrawal (doing handstands) if he goes too long without them."
+    },
+    {
+      "question": "Who becomes Light's primary successor-rival and head of the SPK after L's death?",
+      "options": [
+        "Mello",
+        "Near",
+        "Mikami",
+        "Aizawa"
+      ],
+      "answer": 1,
+      "explanation": "Near (Nate River) is the younger of L's two potential successors raised at Wammy's House, and he eventually solves the Kira case."
+    }
+  ]
+}

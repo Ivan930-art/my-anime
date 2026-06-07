@@ -1,0 +1,60 @@
+{
+  "title": "General Anime Trivia",
+  "questions": [
+    {
+      "question": "In the series \"Naruto\", what is the name of the nine-tailed beast sealed inside Naruto Uzumaki?",
+      "options": [
+        "Gyuki",
+        "Kurama",
+        "Shukaku",
+        "Matatabi"
+      ],
+      "answer": 1,
+      "explanation": "Kurama, also known as the Nine-Tails (Kyūbi), is the beast sealed inside Naruto at his birth."
+    },
+    {
+      "question": "What is the highest-grossing anime film of all time worldwide?",
+      "options": [
+        "Spirited Away",
+        "Your Name",
+        "Demon Slayer: Mugen Train",
+        "Howl's Moving Castle"
+      ],
+      "answer": 2,
+      "explanation": "Demon Slayer: Kimetsu no Yaiba – The Movie: Mugen Train is the highest-grossing anime film of all time, grossing over $500 million."
+    },
+    {
+      "question": "Which anime features brothers Edward and Alphonse Elric searching for the Philosopher's Stone?",
+      "options": [
+        "Fullmetal Alchemist",
+        "Hunter x Hunter",
+        "Blue Exorcist",
+        "D.Gray-man"
+      ],
+      "answer": 0,
+      "explanation": "Fullmetal Alchemist follows the Elric brothers' journey to recover their bodies using alchemy."
+    },
+    {
+      "question": "In \"Dragon Ball Z\", what alien warrior species does Goku belong to?",
+      "options": [
+        "Namekian",
+        "Saiyan",
+        "Frieza Race",
+        "Kryptonian"
+      ],
+      "answer": 1,
+      "explanation": "Goku is a Saiyan sent to Earth from Planet Vegeta as a baby."
+    },
+    {
+      "question": "Which iconic Studio Ghibli film features a giant, friendly grey forest spirit?",
+      "options": [
+        "Princess Mononoke",
+        "Spirited Away",
+        "My Neighbor Totoro",
+        "Ponyo"
+      ],
+      "answer": 2,
+      "explanation": "My Neighbor Totoro centers on two young sisters who interact with friendly wood spirits, most notably Totoro."
+    }
+  ]
+}

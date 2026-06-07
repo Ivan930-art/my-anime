@@ -1,0 +1,60 @@
+{
+  "title": "My Hero Academia Trivia",
+  "questions": [
+    {
+      "question": "What is Deku's real name?",
+      "options": [
+        "Katsuki Bakugo",
+        "Izuku Midoriya",
+        "Shoto Todoroki",
+        "Tenya Iida"
+      ],
+      "answer": 1,
+      "explanation": "Deku's real name is Izuku Midoriya. 'Deku' was originally a mocking nickname given by Bakugo, which Midoriya later adopts as his hero name."
+    },
+    {
+      "question": "What is the name of the legendary Quirk passed down to Deku by All Might?",
+      "options": [
+        "All For One",
+        "One For All",
+        "Super Power",
+        "New Order"
+      ],
+      "answer": 1,
+      "explanation": "One For All is a transferable Quirk that accumulates physical strength and allows the user to share it."
+    },
+    {
+      "question": "Who is Deku's explosive childhood rival and classmate?",
+      "options": [
+        "Eijiro Kirishima",
+        "Shoto Todoroki",
+        "Katsuki Bakugo",
+        "Neito Monoma"
+      ],
+      "answer": 2,
+      "explanation": "Katsuki Bakugo is Deku's aggressive childhood rival who possesses the Explosion Quirk."
+    },
+    {
+      "question": "What two elements does Shoto Todoroki control with his Half-Cold Half-Hot Quirk?",
+      "options": [
+        "Wind and Earth",
+        "Ice and Fire",
+        "Water and Lightning",
+        "Light and Shadow"
+      ],
+      "answer": 1,
+      "explanation": "Todoroki can generate ice from the right side of his body and fire from the left side."
+    },
+    {
+      "question": "Who is the leader of the League of Villains, known for the hands covering his face and body?",
+      "options": [
+        "All For One",
+        "Dabi",
+        "Overhaul",
+        "Tomura Shigaraki"
+      ],
+      "answer": 3,
+      "explanation": "Tomura Shigaraki (Tenko Shimura) leads the League of Villains and has the Decay Quirk."
+    }
+  ]
+}

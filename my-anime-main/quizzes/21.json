@@ -1,0 +1,60 @@
+{
+  "title": "One Piece Trivia",
+  "questions": [
+    {
+      "question": "What is Monkey D. Luffy's ultimate dream?",
+      "options": [
+        "To find the All Blue",
+        "To become the King of the Pirates",
+        "To map the entire world",
+        "To become a Marine Admiral"
+      ],
+      "answer": 1,
+      "explanation": "Luffy wants to find Gold Roger's legendary treasure, the One Piece, to become the King of the Pirates and the freest person on the sea."
+    },
+    {
+      "question": "Which Devil Fruit did Luffy eat as a child, turning him into a rubber man?",
+      "options": [
+        "Chop-Chop Fruit (Bara Bara no Mi)",
+        "Flame-Flame Fruit (Mera Mera no Mi)",
+        "Gum-Gum Fruit (Gomu Gomu no Mi)",
+        "Dark-Dark Fruit (Yami Yami no Mi)"
+      ],
+      "answer": 2,
+      "explanation": "Luffy ate the Gum-Gum Fruit (Gomu Gomu no Mi), giving him the properties of rubber."
+    },
+    {
+      "question": "Who was the first member to join Monkey D. Luffy's Straw Hat crew?",
+      "options": [
+        "Nami",
+        "Usopp",
+        "Sanji",
+        "Roronoa Zoro"
+      ],
+      "answer": 3,
+      "explanation": "Roronoa Zoro, the pirate hunter and master of the Three-Sword Style, is the first recruit of the Straw Hat Pirates."
+    },
+    {
+      "question": "What was the name of the Straw Hat crew's first official pirate ship?",
+      "options": [
+        "Thousand Sunny",
+        "Going Merry",
+        "Red Force",
+        "Baratie"
+      ],
+      "answer": 1,
+      "explanation": "The Going Merry was gifted to the crew by Kaya and served as their beloved home until the Water 7/Enies Lobby arc."
+    },
+    {
+      "question": "Who is Luffy's adoptive brother who ate the Flame-Flame Fruit (Mera Mera no Mi)?",
+      "options": [
+        "Portgas D. Ace",
+        "Sabo",
+        "Trafalgar Law",
+        "Donquixote Doflamingo"
+      ],
+      "answer": 0,
+      "explanation": "Portgas D. Ace is Luffy's older adoptive brother and commander of the Whitebeard Pirates' second division."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Attack on Titan Trivia",
+  "questions": [
+    {
+      "question": "Who is the main protagonist of Attack on Titan?",
+      "options": [
+        "Armin Arlert",
+        "Levi Ackerman",
+        "Eren Yeager",
+        "Erwin Smith"
+      ],
+      "answer": 2,
+      "explanation": "Eren Yeager is the central protagonist who vows to eradicate the Titans after his home is destroyed."
+    },
+    {
+      "question": "What are the names of the three defensive walls protecting humanity?",
+      "options": [
+        "Sina, Rose, Maria",
+        "Nina, Clara, Sophia",
+        "Vesta, Ceres, Pallas",
+        "Alpha, Beta, Gamma"
+      ],
+      "answer": 0,
+      "explanation": "Humanity is protected by Wall Maria (outer), Wall Rose (middle), and Wall Sina (inner)."
+    },
+    {
+      "question": "Which Titan power does Armin Arlert inherit?",
+      "options": [
+        "Armored Titan",
+        "Colossal Titan",
+        "Beast Titan",
+        "Attack Titan"
+      ],
+      "answer": 1,
+      "explanation": "Armin inherits the Colossal Titan from Bertholdt Hoover after receiving the Titan injection."
+    },
+    {
+      "question": "Who is Eren's adoptive sister and a top-ranked soldier in the 104th Training Corps?",
+      "options": [
+        "Sasha Blouse",
+        "Krista Lenz",
+        "Hansi Zoe",
+        "Mikasa Ackerman"
+      ],
+      "answer": 3,
+      "explanation": "Mikasa Ackerman is Eren's adoptive sister, who is intensely protective of him and possesses legendary combat skills."
+    },
+    {
+      "question": "What is the true identity of the Beast Titan?",
+      "options": [
+        "Reiner Braun",
+        "Zeke Yeager",
+        "Grisha Yeager",
+        "Kenny Ackerman"
+      ],
+      "answer": 1,
+      "explanation": "Zeke Yeager, Eren's half-brother, is the inheritor of the Beast Titan."
+    }
+  ]
+}
